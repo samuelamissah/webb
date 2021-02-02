@@ -1,0 +1,109 @@
+<! doctype html >
+<html>
+
+  <head> <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title> Videos!!! </title>
+
+    <style>
+        body {
+            
+            background-image: url(screenshots/unnamed.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+    #bgvid{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+        #cianna{
+            object-position: center;
+            object-fit: fill;
+            
+        }
+      
+      </style>
+    
+    
+    </head>
+    
+    <div style="text-align:left"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+    <button onclick="makeOriginal ()">Original</button>    
+  <br><br>
+  <video id="video1" width="210">
+    <source src="screenshots/I_make_myself_cringe_https___t.co_P2b2BM8vNx.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+    function makeOriginal () {
+        myVideo.width = 210;
+    }
+</script> 
+<br>
+    <br>
+
+<div style="text-align:right">
+<video  width="210" controls>
+    
+  <source src="screenshots/video_2021-01-30_23-29-49.mp4" type="video/mp4">
+    </video>
+</div>
+    
+    
+<div style="text-align: center" >
+    
+    <video id="cianna" height="300" width="300"  controls>
+    <source src="screenshots/I_make_myself_cringe_https___t.co_P2b2BM8vNx.mp4"  type="video/mp4" >
+    
+    </video>
+    
+    
+    </div>
+    <div>
+   <video  poster="screenshots/Web/EroHpiBXUAIsVoY.jpg" width="300" id="bgvid" controls>
+  <source src="screenshots/Web/Ed%20Sheeran%20-%20Perfect%20(Official%20Music%20Video)_2.mp4" type="video/mp4">
+  
+</video>
+        
+    </div>
+    
+    <div>
+      <
+    
+    </div>
+    
+    
+    
+    
+    
+
+
+
+</html>
